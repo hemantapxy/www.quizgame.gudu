@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    /* padding-top: 50px; */
+    margin-top: 100px;
+    margin-left: 30%;
+    /* display: flex;
+    align-items: center; */
+}
+
+.quiz-header {
+    margin-bottom: 20px;
+}
+
+.quiz-header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#question-number {
+    font-size: 1rem;
+    color: #666;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.answers-container {
+    margin-bottom: 20px;
+}
+
+#answer-buttons .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#answer-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+#answer-buttons .btn.correct {
+    background-color: #28a745;
+}
+
+#answer-buttons .btn.wrong {
+    background-color: #dc3545;
+}
+
+.quiz-footer {
+    margin-top: 20px;
+}
+
+#next-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+    background-color: #0056b3;
+}
+
+#score-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    #answer-buttons .btn {
+        font-size: 0.9rem;
+    }
+
+    #next-btn {
+        font-size: 0.9rem;
+    }
+}
+
+#gudu{
+    text-align: center;
+    color: deeppink;
+}

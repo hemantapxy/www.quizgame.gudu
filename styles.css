@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+.header {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background-image: url('images.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+
+/* Overlay for dimming the background */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+/* Logo */
+.logo img {
+    width: 150px;
+    /* Adjust size */
+    z-index: 2;
+}
+
+/* Navigation Bar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff4757;
+    /* Hover color */
+}
+
+/* Make sure content is above the overlay */
+.container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    /* Full viewport height */
+    background: linear-gradient(135deg, #f1f2f6, #dcdde1);
+    /* Light gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Main Headline (H1) */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff4757;
+    /* Bright eye-catching color */
+    margin-bottom: 20px;
+}
+
+/* Subheading (H2) */
+.hero h2 {
+    font-size: 1.5rem;
+    color: #57606f;
+    /* Lighter color for subheading */
+    margin-bottom: 40px;
+}
+
+/* Call to Action Button (CTA) */
+.cta-button {
+    text-decoration: none;
+    background-color: #2ed573;
+    /* Contrasting color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    /* Rounded edges */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for CTA Button */
+.cta-button:hover {
+    background-color: #28a745;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slight increase in size on hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f1f2f6;
+    /* Light background */
+}
+
+.feature-card {
+    text-align: center;
+    max-width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    color: #1e90ff;
+    /* Blue for titles */
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #57606f;
+    margin-bottom: 20px;
+}
+
+/* Hover effect for feature cards */
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f2f6;
+    /* Light background color */
+}
+
+/* Leaderboard Section */
+.leaderboard {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+/* Title (H2) */
+.leaderboard h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e90ff;
+    margin-bottom: 30px;
+}
+
+/* Leaderboard Table */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Headings */
+thead th {
+    background-color: #1e90ff;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+/* Table Rows */
+tbody tr {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Table Data */
+tbody td {
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Player Avatar Images */
+tbody td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Hover Effect for Rows */
+tbody tr:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for CTA Button */
+.cta-button:hover {
+    background-color: #e84118;
+    transform: scale(1.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f2f6;
+    /* Light background */
+}
+
+/* How to Play Section */
+.how-to-play {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+/* Title (H2) */
+.how-to-play h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e90ff;
+    margin-bottom: 40px;
+}
+
+/* Steps */
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Step Icon */
+.step-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+/* Step Content */
+.step-content h3 {
+    font-size: 1.5rem;
+    color: #2f3542;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 1rem;
+    color: #57606f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-icon {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f2f6;
+}
+
+/* Background: Light Color with Subtle Shapes */
+.testimonials {
+    background: linear-gradient(135deg, #f7f9fc 50%, #dfe6e9 50%);
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Subtle Shapes (Circles) */
+.testimonials::before,
+.testimonials::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonials::before {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 15%;
+}
+
+.testimonials::after {
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    right: 10%;
+}
+
+/* Title (H2) */
+.testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2f3542;
+    margin-bottom: 50px;
+}
+
+/* Testimonial Carousel */
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    animation: slide 10s infinite;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #57606f;
+}
+
+/* Hover Effect for Cards */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Animation for Carousel */
+@keyframes slide {
+
+    0%,
+    33% {
+        transform: translateX(0);
+    }
+
+    66% {
+        transform: translateX(-33%);
+    }
+
+    100% {
+        transform: translateX(-66%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @keyframes slide {
+
+        0%,
+        33%,
+        66%,
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #2f3542;
+    /* Dark background color */
+    color: #f1f2f6;
+    /* Light text */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.footer-column {
+    flex-basis: 30%;
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ff6348;
+    /* Contrasting title color */
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f1f2f6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff4757;
+    /* Hover effect color */
+}
+
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social img {
+    width: 100%;
+    height: auto;
+    /* filter: brightness(0) invert(1); */
+    /* Make icons white */
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+    /* Hover effect to slightly enlarge icon */
+}
+
