@@ -4,47 +4,31 @@
     box-sizing: border-box;
 }
 
-body,
-html {
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
+/* Heading styling */
+.app-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #f7cac9, #92a8d1);
 }
 
-/* Header Section */
-.header {
-    position: relative;
-    height: 100vh; /* Full viewport height */
-    background-image: url('images.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px;
+/* Subheading styling */
+.sub-heading {
+    font-size: 24px;
+    font-weight: 400;
+    color: #666;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #2ecc71; /* Vibrant Green */
+    background-color: #b823c6;
 }
 
-
-/* Overlay for dimming the background */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Dark overlay */
-    z-index: 1;
-}
-
-/* Logo */
-.logo img {
-    width: 150px;
-    /* Adjust size */
-    z-index: 2;
-}
-
-/* Navigation Bar */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -54,9 +38,10 @@ html {
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(51, 160, 63);
     font-size: 18px;
     transition: color 0.3s ease;
+    font-weight: 900;
 }
 
 .navbar ul li a:hover {
@@ -86,57 +71,211 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    /* Full viewport height */
-    background: linear-gradient(135deg, #f1f2f6, #dcdde1);
-    /* Light gradient background */
+/* General styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  } */
+  
+  /* Grid container */
+  .subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    padding-left:300px;
+    cursor: pointer;
+  }
+  
+  /* Subject cards */
+  .subject-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
-    padding: 0 20px;
-}
-
-/* Main Headline (H1) */
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ff4757;
-    /* Bright eye-catching color */
-    margin-bottom: 20px;
-}
-
-/* Subheading (H2) */
-.hero h2 {
-    font-size: 1.5rem;
-    color: #57606f;
-    /* Lighter color for subheading */
-    margin-bottom: 40px;
-}
-
-/* Call to Action Button (CTA) */
-.cta-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  #math{
+    color: black;
     text-decoration: none;
-    background-color: #2ed573;
-    /* Contrasting color */
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 50px;
-    /* Rounded edges */
-    transition: all 0.3s ease;
-}
+    font-size: 24px;
+    font-weight:bolder;
+  }
 
-/* Hover effect for CTA Button */
-.cta-button:hover {
-    background-color: #28a745;
-    /* Darker shade on hover */
-    transform: scale(1.05);
-    /* Slight increase in size on hover */
-}
+  .subject-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .subject-card h2 {
+    margin: 10px 0 0;
+    font-size: 24px;
+  }
+  
+  .subject-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  /* Unique color themes for each subject */
+  .math {
+    background-color: #ffcccb;
+  }
+  
+  .science {
+    background-color: #c3f7d3;
+  }
+  
+  .history {
+    background-color: #ffeb99;
+  }
+  
+  .technology {
+    background-color: #b3e0ff;
+  }
+  .c {
+    background-color: #609413;
+  }
+  .java{
+    background-color: #cf7d1f;
+  }
+  .dbms{
+    background-color: #3593d2;
+  }
+  .webdev {
+    background-color: #2bbf7c;
+  }
+  .cpp {
+    background-color: #e11d1d;
+  }
+  .cn {
+    background-color: #b823c6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .subject-card {
+      padding: 15px;
+    }
+    
+    .subject-card h2 {
+      font-size: 20px;
+    }
+    
+    .subject-card .icon {
+      font-size: 30px;
+    }
+  }
+  
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(255, 111, 145, 0.8), rgba(255, 195, 113, 0.8)), url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #f7b42c, #fc575e);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #fff;
+    animation: fadeInUp 2.5s ease-in-out;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-top: 10px;
+    animation: fadeInUp 2.5s ease-in-out;
+  }
+  
+  /* Slide-in effect for the heading */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in effects */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 
 * {
     margin: 0;

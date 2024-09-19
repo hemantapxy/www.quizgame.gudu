@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "What is the correct syntax to declare a variable in C??",
+        question: "What is the correct syntax to declare a variable in java??",
         answers: [
             { text: "int num;", correct: true },
             { text: "int:num;", correct: false },
@@ -9,65 +9,65 @@ const questions = [
         ]
     },
     {
-        question: "Which of the following is the correct way to include a library in C?",
+        question: "What is the default value of a local variable in Java??",
         answers: [
-            { text: "#include [stdio.h]", correct: false },
-            { text: "#include  stdio.h", correct: false },
-            { text: "#include <stdio.h>", correct: true },
-            { text: "#include (stdio.h)", correct: false }
+            { text: "0", correct: false },
+            { text: "Null", correct: false },
+            { text: "Depends upon data type", correct: true },
+            { text: "by default 0", correct: false }
         ]
     },
     {
-        question: "Which of the following data types is used to store decimal values?",
+        question: "Which of the following is a valid keyword in Java?",
         answers: [
-            { text: "int", correct: false },
-            { text: "float", correct: true },
-            { text: "char", correct: false },
-            { text: "double", correct: false }
+            { text: "interface", correct: false },
+            { text: "derive", correct: true },
+            { text: "implements", correct: false },
+            { text: "inherit", correct: false }
         ]
     },
     {
-        question: "What is the result of the following expression: 5 + 2 * 3?",
-        answers: [
-            { text: "11", correct: true },
-            { text: "21", correct: false },
-            { text: "16", correct: false },
-            { text: "17", correct: false }
-        ]
-    },
-
-    {
-        question: "Which of the following is a loop structure in C?",
-        answers: [
-            { text: "while", correct: true },
-            { text: "goto", correct: false },
-            { text: "if", correct: false },
-            { text: "switch", correct: false }
-        ]
-    },
-
-    {
-        question: "Which of the following operators is used to access the value of a variable using its pointer?",
-        answers: [
-            { text: "*", correct: true },
-            { text: "&", correct: false },
-            { text: "@", correct: false },
-            { text: "->", correct: false }
-        ]
-    },
-
-    {
-        question: "What is the size of an int data type on a typical 32-bit system?",
+        question: "What is the size of an int data type in Java?",
         answers: [
             { text: "2bytes", correct: true },
             { text: "4bytes", correct: false },
-            { text: "8bytes", correct: false },
-            { text: "16bytes", correct: false }
+            { text: "16bytes", correct: false },
+            { text: "8bytes", correct: false }
+        ]
+    },
+
+    {
+        question: "What is the correct way to create an object in Java?",
+        answers: [
+            { text: "ClassName obj = new ClassName();", correct: true },
+            { text: "ClassName obj;", correct: false },
+            { text: "new ClassName();", correct: false },
+            { text: "ClassName obj = ClassName();", correct: false }
+        ]
+    },
+
+    {
+        question: "Which of these is not a valid access modifier in Java?",
+        answers: [
+            { text: "package", correct: true },
+            { text: "private", correct: false },
+            { text: "protected", correct: false },
+            { text: "public", correct: false }
+        ]
+    },
+
+    {
+        question: "Which method is used to print text in Java?",
+        answers: [
+            { text: "System.out.println()", correct: true },
+            { text: "printf()", correct: false },
+            { text: "console.log()", correct: false },
+            { text: "write", correct: false }
         ]
     },{
-        question: "Which function is used to take input from the user in C?",
+        question: "Which function is used to take input from the user in java?",
         answers: [
-            { text: "scanf()", correct: true },
+            { text: "scanner class()", correct: true },
             { text: "printf()", correct: false },
             { text: "get()", correct: false },
             { text: "input()", correct: false }
@@ -75,12 +75,12 @@ const questions = [
     },
 
     {
-        question: "who is the father of c?",
+        question: "Which of the following is the correct syntax to inherit a class in Java?",
         answers: [
-            { text: "Denish richee", correct: true },
-            { text: "abdul kalam", correct: false },
-            { text: "linux torvalds", correct: false },
-            { text: "bill gate", correct: false }
+            { text: "class A extends B", correct: true },
+            { text: "class A inherit B", correct: false },
+            { text: "class A implements B", correct: false },
+            { text: "class A abstract B", correct: false }
         ]
     },
     

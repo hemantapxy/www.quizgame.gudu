@@ -1,36 +1,36 @@
 const questions = [
     {
-        question: "What is the correct syntax to declare a variable in C??",
+        question: "What does DBMS stand for?",
         answers: [
-            { text: "int num;", correct: true },
-            { text: "int:num;", correct: false },
-            { text: "num int;", correct: false },
-            { text: "declare int num;", correct: false }
+            { text: "Database Management System", correct: true },
+            { text: "Database backup Management System", correct: false },
+            { text: "Data Management System", correct: false },
+            { text: "Databinary Management System", correct: false }
         ]
     },
     {
-        question: "Which of the following is the correct way to include a library in C?",
+        question: "Which of the following is a valid type of database model?",
         answers: [
-            { text: "#include [stdio.h]", correct: false },
-            { text: "#include  stdio.h", correct: false },
-            { text: "#include <stdio.h>", correct: true },
-            { text: "#include (stdio.h)", correct: false }
+            { text: "Hierarchical", correct: false },
+            { text: "Relational", correct: false },
+            { text: "All of the above", correct: true },
+            { text: "object-oriented", correct: false }
         ]
     },
     {
-        question: "Which of the following data types is used to store decimal values?",
+        question: "Which language is used to query a database?",
         answers: [
-            { text: "int", correct: false },
-            { text: "float", correct: true },
-            { text: "char", correct: false },
-            { text: "double", correct: false }
+            { text: "xml", correct: false },
+            { text: "sql", correct: true },
+            { text: "c++", correct: false },
+            { text: "java", correct: false }
         ]
     },
     {
-        question: "What is the result of the following expression: 5 + 2 * 3?",
+        question: "In an ER diagram, the oval shape represents which of the following?",
         answers: [
-            { text: "11", correct: true },
-            { text: "21", correct: false },
+            { text: "Attribute", correct: true },
+            { text: "entity", correct: false },
             { text: "16", correct: false },
             { text: "17", correct: false }
         ]
